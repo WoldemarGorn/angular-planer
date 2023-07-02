@@ -10,12 +10,11 @@ export class ButtonComponent implements OnInit{
 @Input() color: string = "";
 @Output() btnClick = new EventEmitter()
 
-constructor() {}
+  constructor() {}
 
-ngOnInit(): void {}
+  ngOnInit(): void {}
 
-onClick(){
-this.btnClick.emit();
-}
-
+  onClick(){
+    this.btnClick.emit();
+   }
 }
