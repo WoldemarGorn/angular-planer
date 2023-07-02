@@ -3,20 +3,20 @@ import { Task } from './Task';
 export const TASKS: Task[] = [
   {
     id: 1,
-    text: 'Doctors Appointment',
-    day: 'May 5th at 2:30pm',
+    text: 'Task 1',
+    date: '02.07.2023 09:30',
     reminder: true,
   },
   {
     id: 2,
-    text: 'Meeting at School',
-    day: 'May 6th at 1:30pm',
+    text: 'Task 2',
+    date: '02.07.2023 13:00',
     reminder: true,
   },
   {
     id: 3,
-    text: 'Food Shopping',
-    day: 'May 7th at 12:30pm',
+    text: 'Task 3',
+    date: '02.07.2023 17:00',
     reminder: false,
   },
 ];
