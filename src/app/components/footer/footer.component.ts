@@ -1,10 +1,29 @@
 import { Component } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
+  standalone: true,
   selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  imports: [RouterModule],
+  template: `
+  
+  <footer>
+    <p>Copyright &copy; {{currentYear}}</p>
+    <a routerLink="/about">About</a>
+  </footer>
+  
+  `,
+  styles: `
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  `
 })
 export class FooterComponent {
+
+  currentYear: number = new Date().getFullYear();
 
 }

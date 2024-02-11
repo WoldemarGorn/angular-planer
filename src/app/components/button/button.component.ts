@@ -1,20 +1,29 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  imports: [CommonModule],
+  template: `
+  
+  <button [ngStyle]="{'background-color': color}" class="btn" (click)="onClick()">
+    {{text}}
+  </button>
+  
+  `,
+  styles: ``
 })
-export class ButtonComponent implements OnInit{
-@Input() text: string = "";
-@Input() color: string = "";
-@Output() btnClick = new EventEmitter()
+export class ButtonComponent implements OnInit {
+  @Input() text: string = "";
+  @Input() color: string = "";
+  @Output() btnClick = new EventEmitter()
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  onClick(){
+  onClick() {
     this.btnClick.emit();
-   }
+  }
 }

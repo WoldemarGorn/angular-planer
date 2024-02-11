@@ -1,10 +1,14 @@
-import { Component, Output, EventEmitter} from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Task } from '../../Task';
-import {UiService} from '../../services/ui.service';
-import {Subscription} from 'rxjs';
+import { UiService } from '../../services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
+  standalone: true,
   selector: 'app-add-task',
+  imports: [CommonModule, FormsModule],
   templateUrl: './add-task.component.html',
   styleUrls: ['./add-task.component.css']
 })
@@ -20,10 +24,10 @@ export class AddTaskComponent {
     this.subscription = uiService.onToggle().subscribe((value) => (this.showAddTask = value));
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onSubmit() {
-    if(!this.text){
+    if (!this.text) {
       alert('Please add text!')
       return;
     }
