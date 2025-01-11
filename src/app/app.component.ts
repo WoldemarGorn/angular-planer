@@ -5,10 +5,9 @@ import { FooterComponent } from '../app/components/footer/footer.component';
 import { TasksComponent } from './components/tasks/tasks.component'; 
 
 @Component({
-  standalone: true,
-  selector: 'app-root',
-  imports: [RouterModule, HeaderComponent, FooterComponent, TasksComponent],
-  template: `
+    selector: 'app-root',
+    imports: [RouterModule, HeaderComponent, FooterComponent, TasksComponent],
+    template: `
   
   <div class="container">
     <app-header></app-header>
@@ -18,6 +17,6 @@ import { TasksComponent } from './components/tasks/tasks.component';
   </div>
 
   `,
-  styles: ``
+    styles: ``
 })
 export class AppComponent { }

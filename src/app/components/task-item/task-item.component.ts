@@ -5,11 +5,10 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
-  standalone: true,
-  selector: 'app-task-item',
-  imports: [FontAwesomeModule, CommonModule],
-  templateUrl: './task-item.component.html',
-  styleUrls: ['./task-item.component.css']
+    selector: 'app-task-item',
+    imports: [FontAwesomeModule, CommonModule],
+    templateUrl: './task-item.component.html',
+    styleUrls: ['./task-item.component.css']
 })
 
 export class TaskItemComponent implements OnInit {

@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  standalone: true,
-  selector: 'app-about',
-  imports: [RouterModule],
-  template: `
+    selector: 'app-about',
+    imports: [RouterModule],
+    template: `
   
   <div class="about">
     <h4>Version: 1.0.1</h4>
@@ -13,7 +12,7 @@ import { RouterModule } from '@angular/router';
   </div>
  
  `,
-  styles: `
+    styles: `
   
   .about {
     margin: 30px;

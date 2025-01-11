@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 @Component({
-  standalone: true,
-  selector: 'app-footer',
-  imports: [RouterModule],
-  template: `
+    selector: 'app-footer',
+    imports: [RouterModule],
+    template: `
   
   <footer>
     <p>Copyright &copy; {{currentYear}}</p>
@@ -13,7 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
   </footer>
   
   `,
-  styles: `
+    styles: `
   
   footer {
     margin-top: 30px;

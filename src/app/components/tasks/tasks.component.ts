@@ -7,11 +7,10 @@ import { TaskItemComponent } from '../task-item/task-item.component';
 
 
 @Component({
-  standalone: true,
-  selector: 'app-tasks',
-  imports: [AddTaskComponent, TaskItemComponent, CommonModule],
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+    selector: 'app-tasks',
+    imports: [AddTaskComponent, TaskItemComponent, CommonModule],
+    templateUrl: './tasks.component.html',
+    styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
 

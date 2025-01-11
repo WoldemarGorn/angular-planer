@@ -6,10 +6,9 @@ import { Router } from '@angular/router';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
-  standalone: true,
-  selector: 'app-header',
-  imports: [CommonModule, ButtonComponent],
-  template: `
+    selector: 'app-header',
+    imports: [CommonModule, ButtonComponent],
+    template: `
   
   <header>
     <h1>{{title}}</h1>
@@ -21,7 +20,7 @@ import { ButtonComponent } from '../button/button.component';
   </header>
 
   `,
-  styles: `
+    styles: `
   
   header {
   display: flex;

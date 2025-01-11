@@ -6,11 +6,10 @@ import { UiService } from '../../services/ui.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  standalone: true,
-  selector: 'app-add-task',
-  imports: [CommonModule, FormsModule],
-  templateUrl: './add-task.component.html',
-  styleUrls: ['./add-task.component.css']
+    selector: 'app-add-task',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './add-task.component.html',
+    styleUrls: ['./add-task.component.css']
 })
 export class AddTaskComponent {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
